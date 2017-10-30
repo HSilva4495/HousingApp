@@ -14,7 +14,7 @@ public class AppWindow extends JFrame {
 		initialize();
 	}
 
-	/**
+	/*
 	 * Initialize the contents of the frame.
 	 * sets a basic frame that determines the size
 	 * of the intial frame and backgound image.

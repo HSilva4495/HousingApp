@@ -157,7 +157,7 @@ public class StudentHousing extends AppWindow{
 				else{
 					LoginScreen loginScreen = new LoginScreen();
 					frame.setContentPane(loginScreen.getContentPanel());
-					frame.revalidate();;
+					frame.revalidate();
 				}				
 			}
 		});
