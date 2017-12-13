@@ -413,6 +413,41 @@ public class MainScreen extends AppWindowPanel{
 			
 		});
 		
+		back.addMouseListener(new MouseListener(){
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				window.getContentPane().removeAll();
+				window.getContentPane().add(new LoginScreen(window));
+				window.pack();
+				window.getContentPane().setVisible(true);
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				back.setIcon(new ImageIcon("Images/ReturnB.png"));
+				revalidate();
+			}
+			
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				back.setIcon(new ImageIcon("Images/Return.png"));
+				revalidate();
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
 	
 	}
 
